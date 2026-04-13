@@ -15,6 +15,7 @@ Gli appunti sono consultabili anche online tramite il sito **[stangauni.github.i
 | Repository | Anno | Semestre | Materia |
 |---|---|---|---|
 | [2526_programmazione](https://github.com/StangaUni/2526_programmazione) | I | II | Programmazione |
+| [2526_sistemi_operativi](https://github.com/StangaUni/2526_sistemi_operativi) | I | II | Sistemi Operativi |
 
 > Le repository seguono la convenzione `AASS_materia`, dove `AA` sono le ultime due cifre dell'anno di inizio e `SS` quelle dell'anno di fine dell'anno accademico (es. `2526` = a.a. 2025/2026).
 
