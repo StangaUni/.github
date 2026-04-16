@@ -14,6 +14,7 @@ Gli appunti sono consultabili anche online tramite il sito **[stangauni.github.i
 
 | Repository | Anno | Semestre | Materia |
 |---|---|---|---|
+| [2526_algebra_e_matematica_discreta](https://github.com/StangaUni/2526_algebra_e_matematica_discreta) | I | I | Algebra e Matematica Discreta |
 | [2526_programmazione](https://github.com/StangaUni/2526_programmazione) | I | II | Programmazione |
 | [2526_sistemi_operativi](https://github.com/StangaUni/2526_sistemi_operativi) | I | II | Sistemi Operativi |
 
