@@ -1,10 +1,15 @@
 # StangaUni
 
+> [!NOTE]
+> Le pull request non sono ancora abilitate. Questo documento è stato aggiornato per anticipare quanto sarà possibile fare a seguito di alcune migliorie e sistemazioni del sito che verranno svolte nel breve futuro.
+
 Raccolta di appunti, riassunti ed esercizi redatti durante il percorso universitario in **Informatica** presso l'[Università degli Studi di Padova](https://www.unipd.it).
 
 Il materiale è scritto a scopo personale e didattico. Non è garantita la completezza né l'assenza di errori: usatelo come riferimento, non come sostituto allo studio dai libri di testo o alle lezioni.
 
-> Le repository sono in sola lettura. Per segnalare errori o porre domande usa le **Issues** o le **Discussions** — le pull request sono disabilitate.
+Per questioni organizzative, il maintainer segue categoricamente i materiali caricati dai docenti sulle piattaforme istituzionali, omettendo di proposito eventuali appunti personali non fondati su quanto reso disponibile dai docenti stessi.
+
+> Le repository accettano contribuzioni esterne tramite **pull request**. Ogni PR viene revisionata dal maintainer, che è l'unico ad avere accesso in scrittura. Consulta [CONTRIBUTING.md](../CONTRIBUTING.md) per le linee guida.
 
 ## Sito
 
@@ -14,11 +19,19 @@ Gli appunti sono consultabili anche online tramite il sito **[stangauni.github.i
 
 | Repository | Anno | Semestre | Materia |
 |---|---|---|---|
-| [2526_algebra_e_matematica_discreta](https://github.com/StangaUni/2526_algebra_e_matematica_discreta) | I | I | Algebra e Matematica Discreta |
+| [2526_algebra_e_matematica_discreta](https://github.com/StangaUni/2526_algebra_e_matematica_discreta) | I | II | Algebra e Matematica Discreta |
 | [2526_programmazione](https://github.com/StangaUni/2526_programmazione) | I | II | Programmazione |
 | [2526_sistemi_operativi](https://github.com/StangaUni/2526_sistemi_operativi) | I | II | Sistemi Operativi |
 
 > Le repository seguono la convenzione `AASS_materia`, dove `AA` sono le ultime due cifre dell'anno di inizio e `SS` quelle dell'anno di fine dell'anno accademico (es. `2526` = a.a. 2025/2026).
+
+## Contribuire
+
+È possibile contribuire aprendo una **pull request**. Ogni PR è revisionata e approvata esclusivamente dal maintainer; nessun'altra persona ha accesso in scrittura alle repository o al sito.
+
+A meno che non sia diversamente specificato nella PR stessa, **il nome utente GitHub e un link al profilo del contributore saranno aggiunti sul sito**: nella pagina delle informazioni e nelle sezioni dove il contributo è stato apportato. Non si guadagna nulla lavorando gratuitamente per gli altri, ma è giusto riconoscere l'impegno di ognuno, per quanto grande o piccolo.
+
+Consulta [CONTRIBUTING.md](../CONTRIBUTING.md) per la struttura delle cartelle, le convenzioni sui file e le istruzioni per aprire una PR.
 
 ## Licenza
 
