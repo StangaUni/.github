@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'ISSUE_TEMPLATE/**'
+  workflow_dispatch:
 
 jobs:
   sync:
