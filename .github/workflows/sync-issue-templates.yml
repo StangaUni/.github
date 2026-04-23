@@ -1,0 +1,46 @@
+name: Sync Issue Templates
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'ISSUE_TEMPLATE/**'
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        repo:
+          - stangauni.github.io
+          - 2526_algebra_e_matematica_discreta
+          - 2526_programmazione
+          - 2526_sistemi_operativi
+
+    steps:
+      - name: Checkout .github repo
+        uses: actions/checkout@v4
+
+      - name: Clone target and sync templates
+        env:
+          GH_PAT: ${{ secrets.SYNC_TOKEN }}
+          REPO: ${{ matrix.repo }}
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          git clone "https://x-access-token:${GH_PAT}@github.com/StangaUni/${REPO}.git" target-repo
+
+          mkdir -p target-repo/.github/ISSUE_TEMPLATE
+          cp -r ISSUE_TEMPLATE/. target-repo/.github/ISSUE_TEMPLATE/
+
+          cd target-repo
+          git add .github/ISSUE_TEMPLATE/
+
+          if git diff --staged --quiet; then
+            echo "Nessuna modifica da sincronizzare per ${REPO}, skip."
+          else
+            git commit -m "chore: sync issue templates from .github"
+            git push
+          fi
