@@ -1,8 +1,5 @@
 # StangaUni
 
-> [!NOTE]
-> Le pull request non sono ancora abilitate. Questo documento è stato aggiornato per anticipare quanto sarà possibile fare a seguito di alcune migliorie e sistemazioni del sito che verranno svolte nel breve futuro.
-
 Raccolta di appunti, riassunti ed esercizi redatti durante il percorso universitario in **Informatica** presso l'[Università degli Studi di Padova](https://www.unipd.it).
 
 Il materiale è scritto a scopo personale e didattico. Non è garantita la completezza né l'assenza di errori: usatelo come riferimento, non come sostituto allo studio dai libri di testo o alle lezioni.
