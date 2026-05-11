@@ -16,6 +16,9 @@ jobs:
       matrix:
         repo:
           - stangauni.github.io
+          - 2526_analisi_matematica
+          - 2526_architettura_degli_elaboratori
+          - 2526_logica
           - 2526_algebra_e_matematica_discreta
           - 2526_programmazione
           - 2526_sistemi_operativi
