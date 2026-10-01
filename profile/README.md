@@ -1,43 +1,108 @@
 # StangaUni
 
-Raccolta di appunti, riassunti ed esercizi redatti durante il percorso universitario in **Informatica** presso l'[Università degli Studi di Padova](https://www.unipd.it).
+Raccolta open source di **appunti, riassunti, esercizi e materiale di supporto** redatti durante il percorso di laurea in **Informatica** presso l’[Università degli Studi di Padova](https://www.unipd.it).
 
-Il materiale è scritto a scopo personale e didattico. Non è garantita la completezza né l'assenza di errori: usatelo come riferimento, non come sostituto allo studio dai libri di testo o alle lezioni.
+Il materiale è scritto a scopo personale e didattico.  
+**Non è garantita la completezza né l’assenza di errori**: usatelo come riferimento, non come sostituto allo studio dai libri di testo o alle lezioni.
 
-Per questioni organizzative, il maintainer segue categoricamente i materiali caricati dai docenti sulle piattaforme istituzionali, omettendo di proposito eventuali appunti personali non fondati su quanto reso disponibile dai docenti stessi.
+> [!NOTE]
+> Il maintainer segue prioritariamente i materiali ufficiali caricati dai docenti sulle piattaforme istituzionali.  
+> Eventuali appunti basati solo sulla frequentazione delle lezioni (quando le slide non sono disponibili) sono segnalati esplicitamente nelle rispettive repository.
 
-> Le repository accettano contribuzioni esterne tramite **pull request**. Ogni PR viene revisionata dal maintainer, che è l'unico ad avere accesso in scrittura. Consulta [CONTRIBUTING.md](../CONTRIBUTING.md) per le linee guida.
+Le repository accettano contribuzioni esterne tramite **pull request**.  
+Ogni PR viene revisionata e approvata esclusivamente dal maintainer (unico con accesso in scrittura).  
+Consulta [CONTRIBUTING.md](../CONTRIBUTING.md) per le linee guida.
 
-## Sito
+---
 
-Gli appunti sono consultabili anche online tramite il sito **[stangauni.github.io](https://stangauni.github.io)**, che offre una visualizzazione ottimizzata con supporto a formule matematiche (LaTeX) e navigazione per materia.
+## Sito web
+
+Tutti gli appunti sono consultabili in forma ottimizzata su:
+
+**[stangauni.github.io](https://stangauni.github.io)**
+
+Il sito offre:
+- navigazione per materia
+- supporto completo a formule matematiche (KaTeX / LaTeX)
+- tema chiaro/scuro
+- ricerca e struttura leggibile su desktop e mobile
+
+Stack del sito: React · TypeScript · Vite · MDX · Tailwind CSS · KaTeX · Framer Motion · GitHub Pages.
+
+---
 
 ## Repository
 
-| Repository | Anno | Semestre | Materia |
-|---|---|---|---|
-| [2526_logica](https://github.com/StangaUni/2526_logica) | I | I | Logica |
-| [2526_analisi_matematica](https://github.com/StangaUni/2526_analisi_matematica) | I | I | Analisi matematica |
-| [2526_architettura_degli_elaboratori](https://github.com/StangaUni/2526_architettura_degli_elaboratori) | I | I | Architettura degli Elaboratori |
-| [2526_algebra_e_matematica_discreta](https://github.com/StangaUni/2526_algebra_e_matematica_discreta) | I | II | Algebra e Matematica Discreta |
-| [2526_programmazione](https://github.com/StangaUni/2526_programmazione) | I | II | Programmazione |
-| [2526_sistemi_operativi](https://github.com/StangaUni/2526_sistemi_operativi) | I | II | Sistemi Operativi |
+Le repository seguono la convenzione `AASS_materia`:
+- `AA` = ultime due cifre dell’anno di inizio dell’a.a.
+- `SS` = ultime due cifre dell’anno di fine
+- `materia` = nome della materia in minuscolo con underscore
 
-> I riferimenti ai docenti indicati per ciascuna materia sono puramente indicativi: identificano i docenti responsabili dell'insegnamento sul quale si basano i materiali caricati, senza implicare in alcun modo alcuna forma di attribuzione, approvazione o responsabilità riguardo ai contenuti del sito. Tali riferimenti sono presenti esclusivamente sul sito web e non all'interno delle repository, salvo eventuali refusi. Tutto il materiale presente è redatto interamente dagli studenti contributori degli stessi.
+Esempio: `2526_algebra_e_matematica_discreta` = a.a. 2025/2026.
 
-> Le repository seguono la convenzione `AASS_materia`, dove `AA` sono le ultime due cifre dell'anno di inizio e `SS` quelle dell'anno di fine dell'anno accademico (es. `2526` = a.a. 2025/2026).
+### Anno accademico 2025/2026 (I anno)
+
+| Repository | Semestre | Materia |
+|---|---|---|
+| [2526_logica](https://github.com/StangaUni/2526_logica) | I | Logica |
+| [2526_analisi_matematica](https://github.com/StangaUni/2526_analisi_matematica) | I | Analisi Matematica |
+| [2526_architettura_degli_elaboratori](https://github.com/StangaUni/2526_architettura_degli_elaboratori) | I | Architettura degli Elaboratori |
+| [2526_algebra_e_matematica_discreta](https://github.com/StangaUni/2526_algebra_e_matematica_discreta) | II | Algebra e Matematica Discreta |
+| [2526_programmazione](https://github.com/StangaUni/2526_programmazione) | II | Programmazione |
+| [2526_sistemi_operativi](https://github.com/StangaUni/2526_sistemi_operativi) | II | Sistemi Operativi |
+
+### Anno accademico 2026/2027 (II anno)
+
+| Repository | Semestre | Materia |
+|---|---|---|
+| [2627_programmazione_ad_oggetti](https://github.com/StangaUni/2627_programmazione_ad_oggetti) | I | Programmazione ad Oggetti |
+
+> [!IMPORTANT]
+> I riferimenti ai docenti (quando presenti sul sito) sono puramente indicativi: identificano i docenti responsabili dell’insegnamento su cui si basano i materiali.  
+> **Non implicano alcuna attribuzione, approvazione o responsabilità** da parte dei docenti o dell’Università di Padova.  
+> Tutto il contenuto è redatto interamente dagli studenti contributori.
+
+---
+
+## Struttura tipica di una repository
+
+```
+repository/
+├── Riassunti/     # Riassunti sintetici delle lezioni
+├── Utils/         # Schede, pattern, guide ai compitini, esempi di codice
+├── Esercizi/      # Esercizi svolti (quando pubblicati)
+└── assets/        # Diagrammi SVG (variante chiara + scura)
+```
+
+Le cartelle non ancora pronte per la pubblicazione sono escluse tramite `.gitignore` di ogni repository.
+
+---
 
 ## Contribuire
 
-È possibile contribuire aprendo una **pull request**. Ogni PR è revisionata e approvata esclusivamente dal maintainer; nessun'altra persona ha accesso in scrittura alle repository o al sito.
+1. Fai un **fork** della repository che vuoi modificare.
+2. Crea un branch descrittivo (`fix/...`, `add/...`, `improve/...`).
+3. Apri una **pull request** verso `main`.
+4. Compila il template della PR.
 
-A meno che non sia diversamente specificato nella PR stessa, **il nome utente GitHub e un link al profilo del contributore saranno aggiunti sul sito**: nella pagina delle informazioni e nelle sezioni dove il contributo è stato apportato. Non si guadagna nulla lavorando gratuitamente per gli altri, ma è giusto riconoscere l'impegno di ognuno, per quanto grande o piccolo.
+A meno che non sia diversamente specificato nella PR, il tuo **nome utente GitHub** e un link al profilo verranno aggiunti sul sito (pagina informazioni + sezioni interessate).
 
-Consulta [CONTRIBUTING.md](../CONTRIBUTING.md) per la struttura delle cartelle, le convenzioni sui file e le istruzioni per aprire una PR.
+Consulta [CONTRIBUTING.md](../CONTRIBUTING.md) per:
+- convenzioni sui nomi dei file
+- struttura delle cartelle
+- formato Markdown/MDX
+- cosa è accettato e cosa no
+
+**Non vengono mai accettate** PR che includono materiale didattico originale (slide, registrazioni, testi d’esame).
+
+---
 
 ## Licenza
 
-Salvo diversa indicazione, tutto il materiale è distribuito sotto licenza [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
+Salvo diversa indicazione, tutto il materiale è distribuito sotto licenza  
+**[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)**  
+(Attribution-NonCommercial 4.0 International).
+
 È consentito condividere e adattare per fini non commerciali, citando sempre la fonte.
 
-Il materiale didattico originale (slide, testi di esame, ecc.) rimane di proprietà dei rispettivi docenti e dell'Università di Padova: **non è incluso in queste repository**.
+Il materiale didattico originale (slide, testi di esame, dispense ufficiali, ecc.) rimane di proprietà dei rispettivi docenti e dell’Università di Padova e **non è incluso** in queste repository.
