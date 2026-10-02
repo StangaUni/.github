@@ -55,6 +55,7 @@ Esempio: `2526_algebra_e_matematica_discreta` = a.a. 2025/2026.
 
 | Repository | Semestre | Materia |
 |---|---|---|
+| [2627_algoritmi_e_strutture_dati](https://github.com/StangaUni/2627_algoritmi_e_strutture_dati) | I | Algoritmi e Strutture Dati |
 | [2627_programmazione_ad_oggetti](https://github.com/StangaUni/2627_programmazione_ad_oggetti) | I | Programmazione ad Oggetti |
 
 > [!IMPORTANT]
